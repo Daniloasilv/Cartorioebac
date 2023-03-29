@@ -137,6 +137,7 @@ int main ()//função pelo menu
 		printf ("#\t1- Registrar nomes          #\n"); //\n pula a linha, \t começa o texto com um espaço e o printf apresnta o texto na tela para o usuário
 		printf ("#\t2- Consultar nomes          #\n");
 		printf ("#\t3- Deletar nomes            #\n");
+		printf ("#\t4- Sair do sistema          #\n");
 		printf ("#                                   #\n");
 		printf ("# # # # # # # # # # # # # # # # # # #\n\n"); //fim do menu
 		printf ("Opção:");
@@ -157,6 +158,11 @@ int main ()//função pelo menu
 			
 			case 3:
 			deletar();//chamada da função deletar
+			break;
+			
+			case 4:
+			printf ("Obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 			
 			default:
